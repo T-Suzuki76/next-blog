@@ -1,5 +1,5 @@
-import Link from 'next/link' 
-import Image from 'next/image' 
+import Link from "next/link" 
+import Image from "next/image" 
 import Layout from "../components/layout" 
 import Seo from "../components/seo"
 import * as style from "../styles/index.module.scss"
