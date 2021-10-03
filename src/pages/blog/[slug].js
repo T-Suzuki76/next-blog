@@ -1,6 +1,6 @@
 import Image from 'next/image'
 import ReactMarkdown from 'react-markdown'
-import Layout from "../../components/layout"
+import Layout from '../../components/layout'
 import PrevNext from "../../components/prevNext"
 import Seo from "../../components/seo"
 import * as style from "../../styles/singleBlog.module.scss"
