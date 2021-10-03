@@ -18,7 +18,7 @@ const SingleBlog = ({ frontmatter, markdownBody, prev, next }) => {
               <div className={style.container}>               
                   <h1>{title}</h1>
                   <p>{date}</p> 
-                  <ReactMarkdown />
+                  <ReactMarkdown children={markdownBody}/>
               </div> 
               <PrevNext prev={prev} next={next} />
           </div>
