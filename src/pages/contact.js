@@ -1,21 +1,28 @@
 import { Layout } from "../components/layout"
+import SEO from "../components/seo"
 import * as style from "../styles/contact.module.scss"
 
 const Contact = () => {
     return(
         <Layout>
+            <SEO title="コンタクト" description="これはコンタクトページです"/>
             <div className={style.wrapper}>
                 <div className={style.container}>
                     <h1>Contact</h1>
                     <p>お気軽にご連絡ください</p>
-                    <form>
-                        <label htmlFor="name">name</label>
-                        <input type="text" name="name" id="name" required/>
-                        <label htmlFor="email">email</label>
-                        <input type="email" name="email" id="email" required/>
-                        <label htmlFor="texarea">ご用件</label>
-                        <textarea name="message" rows="10" id="textarea" required></textarea>
-                        <button type="submit">送信</button>
+                    <form
+                        action="https://formspree.io/f/xleavnbe"
+                        method="POST"
+                    >
+                        <label>
+                            Your email:
+                            <input type="email" name="_replyto"/>
+                        </label>
+                        <label>
+                            Your message:
+                            <textarea name="message"></textarea>
+                        </label>
+                        <button type="submit">Send</button>
                     </form>
                 </div>
             </div>
