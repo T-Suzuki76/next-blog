@@ -2,7 +2,7 @@ import Link from "next/link";
 import Image from "next/image";
 import * as style from "../styles/common.module.scss"
 
-export const Header = () => {
+const Header = () => {
     return (
         <header className={style.headerWrapper}>
             <div className={style.container}>

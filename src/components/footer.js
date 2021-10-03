@@ -1,7 +1,7 @@
 import Link from "next/link";
 import * as style from "../styles/common.module.scss"
 
-export const Footer = () => {
+const Footer = () => {
     return(
         <footer className={style.footerWrapper}>
             <div className={style.insideContainer}>
